@@ -1,0 +1,22 @@
+
+--buttons do hero nie do kazdego slidu
+
+--animation in and out
+
+@keyframes animationName(in) {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+
+@keyframes animationName(out) {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+--ustaw zeby video uruchamialo sie w momencie zmiany slajdu (useEffect, stworz nowy state czy slajd jest aktywny czy nie)
+
+--ustaw animacje tekstu rozdziel go split i przydziel do kazdego animacje z (random animation duration przez wewnetrzny styl)
+
+
+uzyj setTImeout nie setinterval w useEffect przy zmianach slajdu [currentSlide] najpierw clear jesli istnieje potem setTimeout(() => setCurrentSlide(jesli ostatni to pierwszy else current+1))
